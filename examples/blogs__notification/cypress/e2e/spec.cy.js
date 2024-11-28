@@ -12,6 +12,7 @@ describe('Browser notifications', () => {
       },
     })
 
+    //test git
     cy.on('window:alert', cy.stub().as('alerted'))
     cy.get('button').click()
     cy.get('@alerted').should('have.been.calledOnce')
